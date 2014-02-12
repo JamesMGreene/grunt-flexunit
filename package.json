@@ -1,0 +1,69 @@
+{
+  "name": "grunt-flexunit",
+  "description": "A Grunt task plugin to running FlexUnit tests for apps built on Adobe Flex/ActionScript/MXML/FLV/AIR/etc.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/JamesMGreene/grunt-flexunit",
+  "author": {
+    "name": "James M. Greene",
+    "email": "james.m.greene@gmail.com",
+    "url": "http://jamesgreene.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JamesMGreene/grunt-flexunit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JamesMGreene/grunt-flexunit/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/JamesMGreene/grunt-flexunit/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0",
+    "npm": ">= 1.2.10"
+  },
+  "scripts": {
+    "test": "grunt travis --verbose"
+  },
+  "peerDependencies": {
+    "flex-sdk": ">= 3.0.0"
+  },
+  "dependencies": {
+    "async": "~0.2.10",
+    "semver": "~2.2.1",
+    "local-version": "~0.2.0",
+    "lodash": "~2.4.1",
+    "node.extend": "~1.0.9"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "flex-sdk": ">= 3.0.0"
+  },
+  "keywords": [
+    "gruntplugin",
+    "apache",
+    "adobe",
+    "flex sdk",
+    "open source",
+    "compiler",
+    "flex",
+    "mxml",
+    "actionscript",
+    "flv",
+    "flash",
+    "air",
+    "flexunit",
+    "asunit",
+    "test",
+    "unit testing",
+    "tdd",
+    "bdd"
+  ]
+}
