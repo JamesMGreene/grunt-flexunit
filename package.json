@@ -1,6 +1,6 @@
 {
   "name": "grunt-flexunit",
-  "description": "A Grunt task plugin to running FlexUnit tests for apps built on Adobe Flex/ActionScript/MXML/FLV/AIR/etc.",
+  "description": "A Grunt task plugin to run FlexUnit tests for apps built on Adobe Flex/ActionScript/MXML/Flash/AIR/etc.",
   "version": "0.1.0",
   "homepage": "https://github.com/JamesMGreene/grunt-flexunit",
   "author": {
@@ -30,6 +30,7 @@
     "test": "grunt travis --verbose"
   },
   "peerDependencies": {
+    "grunt": "~0.4.2",
     "flex-sdk": ">= 3.0.0"
   },
   "dependencies": {
@@ -52,7 +53,6 @@
     "adobe",
     "flex sdk",
     "open source",
-    "compiler",
     "flex",
     "mxml",
     "actionscript",

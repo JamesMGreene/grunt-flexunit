@@ -18,8 +18,7 @@ var async = require('async');
 // Internal modules
 var flexunitOptions = require('./lib/options');
 var templar = require('./lib/templar');
-// var testRunnerFileContents = templar.testRunner({ /* data */ }, { /* options */ });
-// var flexUnitDescriptorFileContents = templar.flexUnitDescriptor({ /* data */ }, { /* options */ });
+var testRunnerFileContents = templar.testRunner(null, { player: 'flash' });
 
 
 module.exports = function(grunt) {

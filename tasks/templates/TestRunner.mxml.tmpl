@@ -10,7 +10,7 @@ creationComplete="runTests();">
 <%= IMPORT_REFS %>
 
     public function runTests() : void {
-      var core : FlexUnitCore = new FlexUnitCore();
+      var core:FlexUnitCore = new FlexUnitCore();
       core.addListener(new <%= CI_LISTENER_CLASS %>());
       var request:Request = Request.qualifyClasses.apply(null, [<%= CLASS_REFS %>]);
       core.run(request);

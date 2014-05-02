@@ -1,6 +1,6 @@
 # grunt-flexunit
 
-> A Grunt task plugin to running FlexUnit tests for apps built on Adobe Flex/ActionScript/MXML/FLV/AIR/etc.
+> A Grunt task plugin to run FlexUnit tests for apps built on Adobe Flex/ActionScript/MXML/Flash/AIR/etc.
 
 
 ## Getting Started
@@ -75,3 +75,29 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 ## License
 Copyright (c) 2014 James M. Greene  
 Licensed under the MIT license.
+
+
+## Background Information on FlexUnit
+
+### Docs
+ - [Introduction](https://cwiki.apache.org/confluence/display/FLEX/FlexUnit+Introduction)
+ - [Getting Started](https://cwiki.apache.org/confluence/display/FLEX/FlexUnit+Getting+Started)
+ - [Setting up a FlexUnit 4 Project](https://cwiki.apache.org/confluence/display/FLEX/FlexUnit+Setting+up+a+project)
+ - [Terminology](https://cwiki.apache.org/confluence/display/FLEX/FlexUnit+Terminology)
+ - [Writing a Basic Test](https://cwiki.apache.org/confluence/display/FLEX/FlexUnit+Writing+a+basic+test)
+ - [Writing an Asynchronous Test](https://cwiki.apache.org/confluence/display/FLEX/FlexUnit+Writing+an+AsyncTest)
+ - [Using Asynchronous Startup](https://cwiki.apache.org/confluence/display/FLEX/FlexUnit+Using+Asynchronous+Startup)
+ - [Assigning Order to your Tests](https://cwiki.apache.org/confluence/display/FLEX/FlexUnit+Order)
+ - [Old homepage](http://sourceforge.net/adobe/flexunit/home/FlexUnit/)
+
+### Downloads
+ - [Releases on GitHub](https://github.com/flexunit/flexunit/releases)
+ - [Old "Downloads" page](http://sourceforge.net/adobe/flexunit/wiki/Downloads/)
+
+### Source
+ - [Nightly build report](https://builds.apache.org/job/flex-flexunit/)
+ - [Source repo](https://github.com/flexunit/flexunit/)
+ - [Ant Task](https://github.com/flexunit/flexunit/blob/master/FlexUnit4AntTasks/src/org/flexunit/ant/tasks/FlexUnitTask.java)
+     - [TestRun class](https://github.com/flexunit/flexunit/blob/master/FlexUnit4AntTasks/src/org/flexunit/ant/tasks/TestRun.java)
+     - [Compilation class](https://github.com/flexunit/flexunit/blob/master/FlexUnit4AntTasks/src/org/flexunit/ant/tasks/Compilation.java)
+ - [Ant AIR Player Launcher](https://github.com/flexunit/flexunit/blob/7d4c01cdcdb003f24a1b4a4dd9126598564a243c/FlexUnit4AntTasks/src/org/flexunit/ant/launcher/commands/player/AdlCommand.java)

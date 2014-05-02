@@ -25,29 +25,6 @@ module.exports = {
     test.strictEqual(fs.existsSync(targetDestIndex), true, 'documentation index file should exist');
 
     test.done();
-  },
-
-  testFlexUnitFailureDueToSynaxError: function(test) {
-    test.expect(2);
-
-    var targetSource = path.join(__dirname, 'testData', 'errorApp.as');
-    var targetDestIndex = path.join(tmpDir, 'testResults2', 'index.html');
-
-    test.strictEqual(fs.existsSync(targetSource), true, 'input source file should exist');
-    test.strictEqual(fs.existsSync(targetDestIndex), false, 'documentation index file should NOT exist');
-
-    test.done();
-  },
-
-  testFlexUnitFailureDueToTestError: function(test) {
-    test.expect(2);
-
-    var targetSource = path.join(__dirname, 'testData', 'failingApp.as');
-    var targetDestIndex = path.join(tmpDir, 'testResults3', 'index.html');
-
-    test.strictEqual(fs.existsSync(targetSource), true, 'input source file should exist');
-    test.strictEqual(fs.existsSync(targetDestIndex), false, 'documentation index file should NOT exist');
-
-    test.done();
   }
+
 };

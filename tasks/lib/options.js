@@ -10,9 +10,11 @@ module.exports = {
       //
 
       // Type of player to run the tests in. Possible values: "flash", "air".
-      player: 'flash',  /* string */
+      player: 'flash'  /* string */
 
+      //
       
+
     };
   }
 
