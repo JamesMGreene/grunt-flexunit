@@ -5,9 +5,7 @@ var path = require('path');
 var fs = require('fs');
 
 // Node userland modules
-var extend = require('node.extend');
 var _ = require('lodash');
-var flexSdk = require('flex-sdk');
 var semver = require('semver');
 var flexSdkVersion = require('local-version').sync('flex-sdk');
 var isFlex3 = semver.satisfies(flexSdkVersion, '3.x');
@@ -34,13 +32,14 @@ function getTestRunnerTemplateData(options) {
 module.exports = {
   testRunner: function(data, options) {
     var tmpl = fs.readFileSync(path.resolve(__dirname, '../templates/TestRunner.mxml.tmpl'));
-    data = extend(true, getTestRunnerTemplateData(options), data);
+    data = _.merge(getTestRunnerTemplateData(options), data);
     return _.template(tmpl, data, options);
   }
+  // TODO: Implement this
   /*,
   flexUnitDescriptor: function(data, options) {
     var tmpl = fs.readFileSync(path.resolve(__dirname, '../templates/flexUnitDescriptor.xml.tmpl'));
-    data = extend(true, getFlexUnitDescriptorTemplateData(options), data);
+    data = _.merge(getFlexUnitDescriptorTemplateData(options), data);
     return _.template(tmpl, data, options);
     return processTemplate(, data, options);
   }
